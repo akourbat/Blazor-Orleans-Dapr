@@ -1,10 +1,10 @@
+using Newtonsoft.Json;
 using Orleans.Concurrency;
 using System;
 
 namespace BlazorServer.Models
 {
-    [Immutable]
-    [Serializable]
+    [JsonObject(MemberSerialization.OptOut)]
     public class WeatherInfo
     {
         public WeatherInfo(DateTime date, int temperatureC, string summary, int temperatureF)
@@ -14,10 +14,13 @@ namespace BlazorServer.Models
             Summary = summary;
             TemperatureF = temperatureF;
         }
+        public WeatherInfo()
+        {
+        }
 
-        public DateTime Date { get; }
-        public int TemperatureC { get; }
-        public string Summary { get; }
-        public int TemperatureF { get; }
+        public DateTime Date { get; set; }
+        public int TemperatureC { get; set; }
+        public string Summary { get; set; }
+        public int TemperatureF { get; set; }
     }
 }

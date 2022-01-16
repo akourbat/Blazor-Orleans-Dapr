@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BlazorServer.Services;
+using BlazorServer.Grains;
 
 namespace BlazorServer
 {
@@ -21,6 +22,15 @@ namespace BlazorServer
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddActors(o => o.Actors.RegisterActor<WeatherActor>());
+            services.AddDaprSidekick(Configuration, configure =>
+            {
+                configure.Sidecar ??= new Man.Dapr.Sidekick.DaprSidecarOptions();
+                configure.Sidecar.AppId = "sidekick";
+                //configure.Sidecar.ComponentsDirectory = "../components";
+                //configure.Sidecar.ConfigFile = "../components/config.yaml";
+
+            });
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
             services.AddSingleton<TodoService>();
@@ -36,17 +46,17 @@ namespace BlazorServer
             else
             {
                 app.UseExceptionHandler("/Error");
+                app.UseHttpsRedirection();
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapActorsHandlers();
                 endpoints.MapBlazorHub();
                 endpoints.MapFallbackToPage("/_Host");
             });

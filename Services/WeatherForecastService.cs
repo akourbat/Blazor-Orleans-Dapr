@@ -1,20 +1,20 @@
+using BlazorServer.Grains;
 using BlazorServer.Models;
-using Orleans;
-using System;
-using System.Collections.Immutable;
+using Dapr.Actors;
+using Dapr.Actors.Client;
 using System.Threading.Tasks;
 
 namespace BlazorServer.Services
 {
     public class WeatherForecastService
     {
-        private readonly IClusterClient _client;
-
-        public WeatherForecastService(IClusterClient client)
+        public async Task<WeatherInfo[]> GetForecastAsync()
         {
-            _client = client;
+            var actorIdTest = new ActorId(33.ToString());
+            string actorType = "WeatherActor";
+            var proxy = ActorProxy.Create<IWeatherActor>(actorIdTest, actorType);
+            var forecast = await proxy.GetForecastAsync();
+            return forecast;
         }
-
-        public Task<ImmutableArray<WeatherInfo>> GetForecastAsync() => _client.GetGrain<IWeatherGrain>(Guid.Empty).GetForecastAsync();
     }
 }

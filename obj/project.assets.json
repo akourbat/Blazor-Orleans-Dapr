@@ -2,6 +2,151 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Dapr.Actors/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Dapr.Client": "1.5.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Dapr.Actors.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Dapr.Actors.dll": {}
+        }
+      },
+      "Dapr.Actors.AspNetCore/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Dapr.Actors": "1.5.0",
+          "System.IO.Pipelines": "4.7.2"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Dapr.Actors.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Dapr.Actors.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Dapr.Client/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Api.CommonProtos": "2.2.0",
+          "Google.Protobuf": "3.13.0",
+          "Grpc.Net.Client": "2.32.0",
+          "System.Net.Http.Json": "5.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Dapr.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Dapr.Client.dll": {}
+        }
+      },
+      "Google.Api.CommonProtos/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "[3.13.0, 4.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Api.CommonProtos.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Api.CommonProtos.dll": {}
+        }
+      },
+      "Google.Protobuf/3.13.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Protobuf.dll": {}
+        }
+      },
+      "Grpc.Core.Api/2.32.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Grpc.Core.Api.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Grpc.Core.Api.dll": {}
+        }
+      },
+      "Grpc.Net.Client/2.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Net.Common": "2.32.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.0.3",
+          "System.Diagnostics.DiagnosticSource": "4.5.1"
+        },
+        "compile": {
+          "lib/net5.0/Grpc.Net.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Grpc.Net.Client.dll": {}
+        }
+      },
+      "Grpc.Net.Common/2.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Core.Api": "2.32.0"
+        },
+        "compile": {
+          "lib/net5.0/Grpc.Net.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Grpc.Net.Common.dll": {}
+        }
+      },
+      "Man.Dapr.Sidekick/1.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Man.Dapr.Sidekick.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Man.Dapr.Sidekick.dll": {}
+        }
+      },
+      "Man.Dapr.Sidekick.AspNetCore/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Man.Dapr.Sidekick": "1.2.1",
+          "Man.Dapr.Sidekick.Extensions.Logging": "1.2.1"
+        },
+        "compile": {
+          "lib/net5.0/Man.Dapr.Sidekick.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Man.Dapr.Sidekick.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Man.Dapr.Sidekick.Extensions.Logging/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Man.Dapr.Sidekick": "1.2.1",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Man.Dapr.Sidekick.Extensions.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Man.Dapr.Sidekick.Extensions.Logging.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Connections.Abstractions/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -175,7 +320,7 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Logging.dll": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/3.0.0": {
+      "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
@@ -975,7 +1120,7 @@
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
         }
       },
-      "System.IO.Pipelines/4.7.0": {
+      "System.IO.Pipelines/4.7.2": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/System.IO.Pipelines.dll": {}
@@ -1079,6 +1224,15 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "System.Net.Http.Json/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/System.Net.Http.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/System.Net.Http.Json.dll": {}
         }
       },
       "System.Net.Primitives/4.3.0": {
@@ -1234,6 +1388,15 @@
         },
         "compile": {
           "ref/netstandard1.5/System.Runtime.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Runtime.Extensions/4.3.0": {
@@ -1740,6 +1903,209 @@
     }
   },
   "libraries": {
+    "Dapr.Actors/1.5.0": {
+      "sha512": "NrkaYZBhAR0m5Jbaj2oXQXnMNBbhT3C1KyiRqRoQudLojutycXTmeB9tS4RKkfoeuoH4HDwnEgKsKey/389sUw==",
+      "type": "package",
+      "path": "dapr.actors/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dapr.actors.1.5.0.nupkg.sha512",
+        "dapr.actors.nuspec",
+        "images/logo-transparent.png",
+        "lib/netcoreapp3.1/Dapr.Actors.dll",
+        "lib/netcoreapp3.1/Dapr.Actors.xml"
+      ]
+    },
+    "Dapr.Actors.AspNetCore/1.5.0": {
+      "sha512": "xbcj1bcVP+ty3+FZGQ+xGkp8YoKPM4d2vSmFKaI34JQ0mUZxVvdnBr4Mp8WK7b8KzJMN67K6Ls1eRC+OBf1EhQ==",
+      "type": "package",
+      "path": "dapr.actors.aspnetcore/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dapr.actors.aspnetcore.1.5.0.nupkg.sha512",
+        "dapr.actors.aspnetcore.nuspec",
+        "images/logo-transparent.png",
+        "lib/netcoreapp3.1/Dapr.Actors.AspNetCore.dll",
+        "lib/netcoreapp3.1/Dapr.Actors.AspNetCore.xml"
+      ]
+    },
+    "Dapr.Client/1.5.0": {
+      "sha512": "kw5qrZXgIoCjUa0ACk/epGj3MsNGOSiX81BOsWwCZFpFquZ8muo0eqsIWZ/hM6FNAYH2u+GUkMGDCYsbDPraBA==",
+      "type": "package",
+      "path": "dapr.client/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dapr.client.1.5.0.nupkg.sha512",
+        "dapr.client.nuspec",
+        "images/logo-transparent.png",
+        "lib/netcoreapp3.1/Dapr.Client.dll",
+        "lib/netcoreapp3.1/Dapr.Client.xml"
+      ]
+    },
+    "Google.Api.CommonProtos/2.2.0": {
+      "sha512": "mxXNYkHYL7T6NG8cdbodxpixQZfpozBkZj2g+jGCB/sO13RqfUvh9YHd8G2QI5HP24brl+nILJReC3/gzgsrrg==",
+      "type": "package",
+      "path": "google.api.commonprotos/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.api.commonprotos.2.2.0.nupkg.sha512",
+        "google.api.commonprotos.nuspec",
+        "lib/net461/Google.Api.CommonProtos.dll",
+        "lib/net461/Google.Api.CommonProtos.pdb",
+        "lib/net461/Google.Api.CommonProtos.xml",
+        "lib/netstandard2.0/Google.Api.CommonProtos.dll",
+        "lib/netstandard2.0/Google.Api.CommonProtos.pdb",
+        "lib/netstandard2.0/Google.Api.CommonProtos.xml"
+      ]
+    },
+    "Google.Protobuf/3.13.0": {
+      "sha512": "/6VgKCh0P59x/rYsBkCvkUanF0TeUYzwV9hzLIWgt23QRBaKHoxaaMkidEWhKibLR88c3PVCXyyrx9Xlb+Ne6w==",
+      "type": "package",
+      "path": "google.protobuf/3.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "google.protobuf.3.13.0.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.pdb",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/netstandard1.1/Google.Protobuf.dll",
+        "lib/netstandard1.1/Google.Protobuf.pdb",
+        "lib/netstandard1.1/Google.Protobuf.xml",
+        "lib/netstandard2.0/Google.Protobuf.dll",
+        "lib/netstandard2.0/Google.Protobuf.pdb",
+        "lib/netstandard2.0/Google.Protobuf.xml"
+      ]
+    },
+    "Grpc.Core.Api/2.32.0": {
+      "sha512": "t9H6P/oYA4ZQI4fWq4eEwq2GmMNqmOSRfz5+YIat7pQuFmz1hRC2Vq/fL9ZVV1mjd5kHqBlhupMdlsBOsaxeEw==",
+      "type": "package",
+      "path": "grpc.core.api/2.32.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "grpc.core.api.2.32.0.nupkg.sha512",
+        "grpc.core.api.nuspec",
+        "lib/net45/Grpc.Core.Api.dll",
+        "lib/net45/Grpc.Core.Api.pdb",
+        "lib/net45/Grpc.Core.Api.xml",
+        "lib/netstandard1.5/Grpc.Core.Api.dll",
+        "lib/netstandard1.5/Grpc.Core.Api.pdb",
+        "lib/netstandard1.5/Grpc.Core.Api.xml",
+        "lib/netstandard2.0/Grpc.Core.Api.dll",
+        "lib/netstandard2.0/Grpc.Core.Api.pdb",
+        "lib/netstandard2.0/Grpc.Core.Api.xml"
+      ]
+    },
+    "Grpc.Net.Client/2.32.0": {
+      "sha512": "T4lKl51ahaSprLcgoZvgn8zYwh834DpaPnrDs6jBRdipL2NHIAC0rPeE7UyzDp/lzv4Xll2tw1u65Fg9ckvErg==",
+      "type": "package",
+      "path": "grpc.net.client/2.32.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "grpc.net.client.2.32.0.nupkg.sha512",
+        "grpc.net.client.nuspec",
+        "lib/net5.0/Grpc.Net.Client.dll",
+        "lib/net5.0/Grpc.Net.Client.pdb",
+        "lib/net5.0/Grpc.Net.Client.xml",
+        "lib/netstandard2.1/Grpc.Net.Client.dll",
+        "lib/netstandard2.1/Grpc.Net.Client.pdb",
+        "lib/netstandard2.1/Grpc.Net.Client.xml",
+        "packageIcon.png"
+      ]
+    },
+    "Grpc.Net.Common/2.32.0": {
+      "sha512": "vDsgy6fs+DlsylppjK9FBGTMMUe8vfAmaURV7ZTurM27itr8qBwymgqmwnVB2hcP1q35NqKx2NvPGe5S2IEnDw==",
+      "type": "package",
+      "path": "grpc.net.common/2.32.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "grpc.net.common.2.32.0.nupkg.sha512",
+        "grpc.net.common.nuspec",
+        "lib/net5.0/Grpc.Net.Common.dll",
+        "lib/net5.0/Grpc.Net.Common.pdb",
+        "lib/net5.0/Grpc.Net.Common.xml",
+        "lib/netstandard2.1/Grpc.Net.Common.dll",
+        "lib/netstandard2.1/Grpc.Net.Common.pdb",
+        "lib/netstandard2.1/Grpc.Net.Common.xml",
+        "packageIcon.png"
+      ]
+    },
+    "Man.Dapr.Sidekick/1.2.1": {
+      "sha512": "qy26ztSglMAY8VJQtCqORoHfTbGyY97iGYkmSJT4SNxiBpwPDnrCIkKgqReZjRJAbIJWmtf/5TveIFbA7/5GEg==",
+      "type": "package",
+      "path": "man.dapr.sidekick/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/dapr_sidekick_package_icon.png",
+        "lib/net35/Man.Dapr.Sidekick.dll",
+        "lib/net35/Man.Dapr.Sidekick.xml",
+        "lib/net45/Man.Dapr.Sidekick.dll",
+        "lib/net45/Man.Dapr.Sidekick.xml",
+        "lib/net461/Man.Dapr.Sidekick.dll",
+        "lib/net461/Man.Dapr.Sidekick.xml",
+        "lib/net5.0/Man.Dapr.Sidekick.dll",
+        "lib/net5.0/Man.Dapr.Sidekick.xml",
+        "lib/netcoreapp3.1/Man.Dapr.Sidekick.dll",
+        "lib/netcoreapp3.1/Man.Dapr.Sidekick.xml",
+        "lib/netstandard2.0/Man.Dapr.Sidekick.dll",
+        "lib/netstandard2.0/Man.Dapr.Sidekick.xml",
+        "man.dapr.sidekick.1.2.1.nupkg.sha512",
+        "man.dapr.sidekick.nuspec"
+      ]
+    },
+    "Man.Dapr.Sidekick.AspNetCore/1.2.1": {
+      "sha512": "lftrevnN3P9s6+bgqBaqYsONRGe66gJ/6qmvE9xuakk85SVgvSMWw1YzKVqEJi50WBUNazlDy0zelAMtZpXaIw==",
+      "type": "package",
+      "path": "man.dapr.sidekick.aspnetcore/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/dapr_sidekick_package_icon.png",
+        "lib/net462/Man.Dapr.Sidekick.AspNetCore.dll",
+        "lib/net462/Man.Dapr.Sidekick.AspNetCore.xml",
+        "lib/net5.0/Man.Dapr.Sidekick.AspNetCore.dll",
+        "lib/net5.0/Man.Dapr.Sidekick.AspNetCore.xml",
+        "lib/netcoreapp3.1/Man.Dapr.Sidekick.AspNetCore.dll",
+        "lib/netcoreapp3.1/Man.Dapr.Sidekick.AspNetCore.xml",
+        "lib/netstandard2.0/Man.Dapr.Sidekick.AspNetCore.dll",
+        "lib/netstandard2.0/Man.Dapr.Sidekick.AspNetCore.xml",
+        "man.dapr.sidekick.aspnetcore.1.2.1.nupkg.sha512",
+        "man.dapr.sidekick.aspnetcore.nuspec"
+      ]
+    },
+    "Man.Dapr.Sidekick.Extensions.Logging/1.2.1": {
+      "sha512": "gcMyegiwoWDY9h1fIRFweMT4ewO7WioiiN5HwiUT+zQ2eZFsSZ+rKhFrMmAjcWdCx8cJxJkE+7lqBc7TrnWS3A==",
+      "type": "package",
+      "path": "man.dapr.sidekick.extensions.logging/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/dapr_sidekick_package_icon.png",
+        "lib/net45/Man.Dapr.Sidekick.Extensions.Logging.dll",
+        "lib/net45/Man.Dapr.Sidekick.Extensions.Logging.xml",
+        "lib/net461/Man.Dapr.Sidekick.Extensions.Logging.dll",
+        "lib/net461/Man.Dapr.Sidekick.Extensions.Logging.xml",
+        "lib/net5.0/Man.Dapr.Sidekick.Extensions.Logging.dll",
+        "lib/net5.0/Man.Dapr.Sidekick.Extensions.Logging.xml",
+        "lib/netcoreapp3.1/Man.Dapr.Sidekick.Extensions.Logging.dll",
+        "lib/netcoreapp3.1/Man.Dapr.Sidekick.Extensions.Logging.xml",
+        "lib/netstandard2.0/Man.Dapr.Sidekick.Extensions.Logging.dll",
+        "lib/netstandard2.0/Man.Dapr.Sidekick.Extensions.Logging.xml",
+        "man.dapr.sidekick.extensions.logging.1.2.1.nupkg.sha512",
+        "man.dapr.sidekick.extensions.logging.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Connections.Abstractions/3.0.0": {
       "sha512": "GaqeOcVVMTf4X/joSuNku+g23M+Y5Tx0xN4vOS7A6OwNujXJXetMnDBC+u6CAaf0CECB4PII2+t+WAQUlJGFTw==",
       "type": "package",
@@ -1997,17 +2363,24 @@
         "microsoft.extensions.logging.nuspec"
       ]
     },
-    "Microsoft.Extensions.Logging.Abstractions/3.0.0": {
-      "sha512": "+PsosTYZn+omucI0ff9eywo9QcPLwcbIWf7dz7ZLM1zGR8gVZXJ3wo6+tkuIedUNW5iWENlVJPEvrGjiVeoNNQ==",
+    "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
+      "sha512": "NxP6ahFcBnnSfwNBi2KH2Oz8Xl5Sm2krjId/jRR3I7teFphwiUoUeZPwTNA21EX+5PtjqmyAvKaOeBXcJjcH/w==",
       "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/3.0.0",
+      "path": "microsoft.extensions.logging.abstractions/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.3.0.0.nupkg.sha512",
-        "microsoft.extensions.logging.abstractions.nuspec"
+        "microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.Extensions.ObjectPool/3.0.0": {
@@ -3840,24 +4213,29 @@
         "system.io.filesystem.primitives.nuspec"
       ]
     },
-    "System.IO.Pipelines/4.7.0": {
-      "sha512": "S0L7oyWyQdVzD+5xIvcC8h44Vc+FY+qXDCLRh2+YsuBDORNphcxNX+tXR6ByLMjQ/7jDaXxsYBF6qbAr7ZIaFw==",
+    "System.IO.Pipelines/4.7.2": {
+      "sha512": "rGIIhoY3lUdn9rWeuGdgeZZ0P+SpJ1wZI5g8TnXqgvuhFgUP7iP9Nt5FZebYInQZQxqnwjPxdYYBE5l/8PJmqQ==",
       "type": "package",
-      "path": "system.io.pipelines/4.7.0",
+      "path": "system.io.pipelines/4.7.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.IO.Pipelines.dll",
+        "lib/net461/System.IO.Pipelines.xml",
         "lib/netcoreapp3.0/System.IO.Pipelines.dll",
         "lib/netcoreapp3.0/System.IO.Pipelines.xml",
         "lib/netstandard1.3/System.IO.Pipelines.dll",
         "lib/netstandard1.3/System.IO.Pipelines.xml",
         "lib/netstandard2.0/System.IO.Pipelines.dll",
         "lib/netstandard2.0/System.IO.Pipelines.xml",
+        "ref/net461/System.IO.Pipelines.dll",
+        "ref/net461/System.IO.Pipelines.xml",
         "ref/netcoreapp2.0/System.IO.Pipelines.dll",
         "ref/netcoreapp2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.4.7.0.nupkg.sha512",
+        "system.io.pipelines.4.7.2.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -4120,6 +4498,28 @@
         "runtimes/win/lib/netstandard1.3/System.Net.Http.dll",
         "system.net.http.4.3.0.nupkg.sha512",
         "system.net.http.nuspec"
+      ]
+    },
+    "System.Net.Http.Json/5.0.0": {
+      "sha512": "3CPSQpCzEmI9o+1G79TnPCjF40omCdnoXj2Rg76BDwGj5+LZnFPjV+t35eedlvl+uthmholk/XXxXTYgJWSexw==",
+      "type": "package",
+      "path": "system.net.http.json/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Net.Http.Json.dll",
+        "lib/net461/System.Net.Http.Json.xml",
+        "lib/net5.0/System.Net.Http.Json.dll",
+        "lib/net5.0/System.Net.Http.Json.xml",
+        "lib/netstandard2.0/System.Net.Http.Json.dll",
+        "lib/netstandard2.0/System.Net.Http.Json.xml",
+        "system.net.http.json.5.0.0.nupkg.sha512",
+        "system.net.http.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Net.Primitives/4.3.0": {
@@ -4883,6 +5283,31 @@
         "ref/xamarinwatchos10/_._",
         "system.runtime.4.3.1.nupkg.sha512",
         "system.runtime.nuspec"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Runtime.Extensions/4.3.0": {
@@ -6255,6 +6680,8 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Dapr.Actors.AspNetCore >= 1.5.0",
+      "Man.Dapr.Sidekick.AspNetCore >= 1.2.1",
       "Microsoft.Orleans.CodeGenerator.MSBuild >= 3.4.3",
       "Microsoft.Orleans.OrleansProviders >= 3.4.3",
       "Microsoft.Orleans.Server >= 3.4.3"
@@ -6265,19 +6692,18 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "3.0.0-dev",
+    "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CodeProjects\\Orleans Blazor sample\\samples\\Blazor\\BlazorServer\\BlazorServer.csproj",
+      "projectUniqueName": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\BlazorServer.csproj",
       "projectName": "BlazorServer",
-      "projectPath": "D:\\CodeProjects\\Orleans Blazor sample\\samples\\Blazor\\BlazorServer\\BlazorServer.csproj",
+      "projectPath": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\BlazorServer.csproj",
       "packagesPath": "C:\\Users\\akour\\.nuget\\packages\\",
-      "outputPath": "D:\\CodeProjects\\Orleans Blazor sample\\samples\\Blazor\\BlazorServer\\obj\\",
+      "outputPath": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "D:\\CodeProjects\\Orleans Blazor sample\\NuGet.Config",
         "C:\\Users\\akour\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -6286,6 +6712,7 @@
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6295,7 +6722,6 @@
         }
       },
       "warningProperties": {
-        "allWarningsAsErrors": true,
         "warnAsError": [
           "NU1605"
         ]
@@ -6305,6 +6731,14 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Dapr.Actors.AspNetCore": {
+            "target": "Package",
+            "version": "[1.5.0, )"
+          },
+          "Man.Dapr.Sidekick.AspNetCore": {
+            "target": "Package",
+            "version": "[1.2.1, )"
+          },
           "Microsoft.Orleans.CodeGenerator.MSBuild": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers",
             "suppressParent": "All",
@@ -6338,7 +6772,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

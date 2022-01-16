@@ -1,24 +1,24 @@
 LogLevel:Warning
-ProjectPath:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\BlazorServer.csproj
+ProjectPath:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\BlazorServer.csproj
 ProjectGuid:
 AssemblyName:BlazorServer
 OutputType:Exe
-TargetPath:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\bin\Debug\net5.0\BlazorServer.dll
-CodeGenOutputFile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\obj\Debug\net5.0\BlazorServer.orleans.g.cs
-Compile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\Grains\ITodoGrain.cs
-Compile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\Grains\ITodoManagerGrain.cs
-Compile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\Grains\IWeatherGrain.cs
-Compile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\Grains\TodoGrain.cs
-Compile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\Grains\TodoManagerGrain.cs
-Compile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\Grains\WeatherActor.cs
-Compile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\Grains\WeatherGrain.cs
-Compile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\Models\TodoItem.cs
-Compile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\Models\TodoNotification.cs
-Compile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\Models\WeatherInfo.cs
-Compile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\Program.cs
-Compile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\Services\TodoService.cs
-Compile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\Services\WeatherForecastService.cs
-Compile:D:\CodeProjects\Orleans Blazor sample\samples\Blazor\BlazorServer\Startup.cs
+TargetPath:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\bin\Debug\net5.0\BlazorServer.dll
+CodeGenOutputFile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net5.0\BlazorServer.orleans.g.cs
+Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\ITodoGrain.cs
+Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\ITodoManagerGrain.cs
+Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\IWeatherGrain.cs
+Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\TodoGrain.cs
+Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\TodoManagerGrain.cs
+Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\WeatherActor.cs
+Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\WeatherGrain.cs
+Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Models\TodoItem.cs
+Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Models\TodoNotification.cs
+Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Models\WeatherInfo.cs
+Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Program.cs
+Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Services\TodoService.cs
+Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Services\WeatherForecastService.cs
+Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Startup.cs
 Reference:C:\Users\akour\.nuget\packages\dapr.actors.aspnetcore\1.5.0\lib\netcoreapp3.1\Dapr.Actors.AspNetCore.dll
 Reference:C:\Users\akour\.nuget\packages\dapr.actors\1.5.0\lib\netcoreapp3.1\Dapr.Actors.dll
 Reference:C:\Users\akour\.nuget\packages\dapr.client\1.5.0\lib\netcoreapp3.1\Dapr.Client.dll
@@ -322,4 +322,4 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5.0\System.Xml.XPath.XDocument.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5.0\WindowsBase.dll
 DefineConstants:TRACE,DEBUG,NET,NET5_0,NETCOREAPP
-InputHash:54a7328c0210a66b4a03cccfdf1a0b1d3caa1969
+InputHash:b1acc67cf82cb5c7dc70e9536032b452762a3bbf

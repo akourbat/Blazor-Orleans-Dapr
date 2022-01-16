@@ -416,6 +416,7 @@ namespace OrleansGeneratedCode
         {
             feature.Classes.Add(new global::Orleans.Metadata.GrainClassMetadata(typeof(global::BlazorServer.TodoGrain)));
             feature.Classes.Add(new global::Orleans.Metadata.GrainClassMetadata(typeof(global::BlazorServer.TodoManagerGrain)));
+            feature.Classes.Add(new global::Orleans.Metadata.GrainClassMetadata(typeof(global::BlazorServer.WeatherGrain)));
         }
 
         public void Populate(global::Orleans.Serialization.SerializerFeature feature)
@@ -424,6 +425,7 @@ namespace OrleansGeneratedCode
             feature.AddSerializerType(typeof(global::BlazorServer.Models.TodoNotification), typeof(BlazorServer.Models.OrleansCodeGenBlazorServer_Models_TodoNotificationSerializer), false);
             feature.AddKnownType("BlazorServer.TodoGrain,BlazorServer", "BlazorServer.TodoGrain");
             feature.AddKnownType("BlazorServer.TodoManagerGrain,BlazorServer", "BlazorServer.TodoManagerGrain");
+            feature.AddKnownType("BlazorServer.WeatherGrain,BlazorServer", "BlazorServer.WeatherGrain");
             feature.AddKnownType("BlazorServer.ITodoGrain,BlazorServer", "BlazorServer.ITodoGrain");
             feature.AddKnownType("System.Threading.Tasks.Task", "Task");
             feature.AddKnownType("BlazorServer.Models.TodoItem,BlazorServer", "BlazorServer.Models.TodoItem");

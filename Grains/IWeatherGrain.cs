@@ -7,6 +7,6 @@ namespace BlazorServer
 {
     public interface IWeatherGrain : IGrainWithGuidKey
     {
-        Task<ImmutableArray<WeatherInfo>> GetForecastAsync();
+        //Task<ImmutableArray<WeatherInfo>> GetForecastAsync();
     }
 }

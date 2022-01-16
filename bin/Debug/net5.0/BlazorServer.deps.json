@@ -22,16 +22,16 @@
     "languageVersion": "9.0",
     "platform": "",
     "allowUnsafe": false,
-    "warningsAsErrors": true,
+    "warningsAsErrors": false,
     "optimize": false,
     "keyFile": "",
     "emitEntryPoint": true,
     "xmlDoc": false,
-    "debugType": "embedded"
+    "debugType": "portable"
   },
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "BlazorServer/3.0.0-dev": {
+      "BlazorServer/1.0.0": {
         "dependencies": {
           "Dapr.Actors.AspNetCore": "1.5.0",
           "Man.Dapr.Sidekick.AspNetCore": "1.2.1",
@@ -3173,7 +3173,7 @@
     }
   },
   "libraries": {
-    "BlazorServer/3.0.0-dev": {
+    "BlazorServer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
