@@ -7,11 +7,9 @@ TargetPath:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\bin\Debug\net5.0\Blaz
 CodeGenOutputFile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net5.0\BlazorServer.orleans.g.cs
 Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\ITodoGrain.cs
 Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\ITodoManagerGrain.cs
-Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\IWeatherGrain.cs
 Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\TodoGrain.cs
 Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\TodoManagerGrain.cs
 Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\WeatherActor.cs
-Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\WeatherGrain.cs
 Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Models\TodoItem.cs
 Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Models\TodoNotification.cs
 Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Models\WeatherInfo.cs
@@ -322,4 +320,4 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5.0\System.Xml.XPath.XDocument.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5.0\WindowsBase.dll
 DefineConstants:TRACE,DEBUG,NET,NET5_0,NETCOREAPP
-InputHash:b1acc67cf82cb5c7dc70e9536032b452762a3bbf
+InputHash:f46012dffbe365bd9fac21ce6d2ef29837506fae

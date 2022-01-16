@@ -225,83 +225,6 @@ namespace BlazorServer
             return base.InvokeMethodAsync<global::System.Collections.Immutable.ImmutableArray<global::System.Guid>>(unchecked((int)0x9FE629AC), null);
         }
     }
-
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("OrleansCodeGen", "2.0.0.0"), global::Orleans.CodeGeneration.MethodInvokerAttribute(typeof(global::BlazorServer.IWeatherGrain), (int)0x7D5D510F), global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute]
-    internal class OrleansCodeGenWeatherGrainMethodInvoker : global::Orleans.CodeGeneration.IGrainMethodInvoker
-    {
-        public async global::System.Threading.Tasks.Task<object> Invoke(global::Orleans.Runtime.IAddressable grain, global::Orleans.CodeGeneration.InvokeMethodRequest request)
-        {
-            int interfaceId = request.InterfaceId;
-            int methodId = request.MethodId;
-            var arguments = request.Arguments;
-            switch (interfaceId)
-            {
-                case (int)0x7D5D510F:
-                {
-                    var casted = ((global::BlazorServer.IWeatherGrain)grain);
-                    switch (methodId)
-                    {
-                        default:
-                            ThrowMethodNotImplemented(interfaceId, methodId);
-                            return null;
-                    }
-                }
-
-                default:
-                    ThrowInterfaceNotImplemented(interfaceId);
-                    return null;
-            }
-
-            void ThrowInterfaceNotImplemented(int i) => throw new global::System.NotImplementedException($"InterfaceId: 0x{i:X}");
-            void ThrowMethodNotImplemented(int i, int m) => throw new global::System.NotImplementedException($"InterfaceId: 0x{i:X}, MethodId: 0x{m:X}");
-        }
-
-        public int InterfaceId => (int)0x7D5D510F;
-        public ushort InterfaceVersion => 0;
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("OrleansCodeGen", "2.0.0.0"), global::System.SerializableAttribute, global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute, global::Orleans.CodeGeneration.GrainReferenceAttribute(typeof(global::BlazorServer.IWeatherGrain))]
-    internal class OrleansCodeGenWeatherGrainReference : global::Orleans.Runtime.GrainReference, global::BlazorServer.IWeatherGrain
-    {
-        OrleansCodeGenWeatherGrainReference(global::Orleans.Runtime.GrainReference other): base(other)
-        {
-        }
-
-        OrleansCodeGenWeatherGrainReference(global::Orleans.Runtime.GrainReference other, global::Orleans.CodeGeneration.InvokeMethodOptions invokeMethodOptions): base(other, invokeMethodOptions)
-        {
-        }
-
-        OrleansCodeGenWeatherGrainReference(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context): base(info, context)
-        {
-        }
-
-        public override int InterfaceId => (int)0x7D5D510F;
-        public override ushort InterfaceVersion => 0;
-        public override string InterfaceName => "IWeatherGrain";
-        public override bool IsCompatible(int interfaceId) => interfaceId == (int)0x7D5D510F;
-        public override string GetMethodName(int interfaceId, int methodId)
-        {
-            switch (interfaceId)
-            {
-                case (int)0x7D5D510F:
-                {
-                    switch (methodId)
-                    {
-                        default:
-                            ThrowMethodNotImplemented(interfaceId, methodId);
-                            return null;
-                    }
-                }
-
-                default:
-                    ThrowInterfaceNotImplemented(interfaceId);
-                    return null;
-            }
-
-            void ThrowInterfaceNotImplemented(int i) => throw new global::System.NotImplementedException($"InterfaceId: 0x{i:X}");
-            void ThrowMethodNotImplemented(int i, int m) => throw new global::System.NotImplementedException($"InterfaceId: 0x{i:X}, MethodId: 0x{m:X}");
-        }
-    }
 }
 
 namespace BlazorServer.Models
@@ -409,14 +332,12 @@ namespace OrleansGeneratedCode
         {
             feature.Interfaces.Add(new global::Orleans.Metadata.GrainInterfaceMetadata(typeof(global::BlazorServer.ITodoGrain), typeof(BlazorServer.OrleansCodeGenTodoGrainReference), typeof(BlazorServer.OrleansCodeGenTodoGrainMethodInvoker), unchecked((int)0xC30DE5A4)));
             feature.Interfaces.Add(new global::Orleans.Metadata.GrainInterfaceMetadata(typeof(global::BlazorServer.ITodoManagerGrain), typeof(BlazorServer.OrleansCodeGenTodoManagerGrainReference), typeof(BlazorServer.OrleansCodeGenTodoManagerGrainMethodInvoker), unchecked((int)0xB88EC2E8)));
-            feature.Interfaces.Add(new global::Orleans.Metadata.GrainInterfaceMetadata(typeof(global::BlazorServer.IWeatherGrain), typeof(BlazorServer.OrleansCodeGenWeatherGrainReference), typeof(BlazorServer.OrleansCodeGenWeatherGrainMethodInvoker), (int)0x7D5D510F));
         }
 
         public void Populate(global::Orleans.Metadata.GrainClassFeature feature)
         {
             feature.Classes.Add(new global::Orleans.Metadata.GrainClassMetadata(typeof(global::BlazorServer.TodoGrain)));
             feature.Classes.Add(new global::Orleans.Metadata.GrainClassMetadata(typeof(global::BlazorServer.TodoManagerGrain)));
-            feature.Classes.Add(new global::Orleans.Metadata.GrainClassMetadata(typeof(global::BlazorServer.WeatherGrain)));
         }
 
         public void Populate(global::Orleans.Serialization.SerializerFeature feature)
@@ -425,7 +346,6 @@ namespace OrleansGeneratedCode
             feature.AddSerializerType(typeof(global::BlazorServer.Models.TodoNotification), typeof(BlazorServer.Models.OrleansCodeGenBlazorServer_Models_TodoNotificationSerializer), false);
             feature.AddKnownType("BlazorServer.TodoGrain,BlazorServer", "BlazorServer.TodoGrain");
             feature.AddKnownType("BlazorServer.TodoManagerGrain,BlazorServer", "BlazorServer.TodoManagerGrain");
-            feature.AddKnownType("BlazorServer.WeatherGrain,BlazorServer", "BlazorServer.WeatherGrain");
             feature.AddKnownType("BlazorServer.ITodoGrain,BlazorServer", "BlazorServer.ITodoGrain");
             feature.AddKnownType("System.Threading.Tasks.Task", "Task");
             feature.AddKnownType("BlazorServer.Models.TodoItem,BlazorServer", "BlazorServer.Models.TodoItem");
@@ -433,7 +353,6 @@ namespace OrleansGeneratedCode
             feature.AddKnownType("BlazorServer.ITodoManagerGrain,BlazorServer", "BlazorServer.ITodoManagerGrain");
             feature.AddKnownType("System.Guid", "Guid");
             feature.AddKnownType("System.Collections.Immutable.ImmutableArray`1", "ImmutableArray`1'1");
-            feature.AddKnownType("BlazorServer.IWeatherGrain,BlazorServer", "BlazorServer.IWeatherGrain");
             feature.AddKnownType("BlazorServer.TodoGrain+State,BlazorServer", "BlazorServer.BlazorServer.TodoGrain.State");
             feature.AddKnownType("BlazorServer.TodoManagerGrain+State,BlazorServer", "BlazorServer.BlazorServer.TodoManagerGrain.State");
             feature.AddKnownType("BlazorServer.Grains.IWeatherActor,BlazorServer", "BlazorServer.Grains.IWeatherActor");
