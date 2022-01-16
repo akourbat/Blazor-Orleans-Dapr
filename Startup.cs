@@ -27,7 +27,7 @@ namespace BlazorServer
             {
                 configure.Sidecar ??= new Man.Dapr.Sidekick.DaprSidecarOptions();
                 configure.Sidecar.AppId = "sidekick";
-                //configure.Sidecar.ComponentsDirectory = "../components";
+                configure.Sidecar.ComponentsDirectory = "./components";
                 //configure.Sidecar.ConfigFile = "../components/config.yaml";
 
             });
