@@ -145,3 +145,4 @@ C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net5.0\BlazorServer.dl
 C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net5.0\ref\BlazorServer.dll
 C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net5.0\BlazorServer.pdb
 C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net5.0\BlazorServer.genruntimeconfig.cache
+C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net5.0\BlazorServer.csproj.AssemblyReference.cache
