@@ -133,14 +133,14 @@
 
     private async Task HandleTodoDoneAsync(TodoItem item, bool isDone)
     {
-        var updated = item.WithIsDone(isDone);
+        var updated = item with { IsDone = isDone, Timestamp = DateTime.UtcNow };
         await TodoService.SetAsync(updated);
         TryUpdateCollection(updated);
     }
 
     private async Task HandleTodoTitleChangeAsync(TodoItem item, string title)
     {
-        var updated = item.WithTitle(title);
+        var updated = item with { Title = title, Timestamp = DateTime.UtcNow };
         await TodoService.SetAsync(updated);
         TryUpdateCollection(updated);
     }

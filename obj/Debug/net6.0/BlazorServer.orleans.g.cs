@@ -254,8 +254,15 @@ namespace BlazorServer.Models
         [global::Orleans.CodeGeneration.CopierMethodAttribute]
         public object DeepCopier(object original, global::Orleans.Serialization.ICopyContext context)
         {
-            // No deep copy required since BlazorServer.Models.TodoItem is marked with the [Immutable] attribute.
-            return original;
+            global::BlazorServer.Models.TodoItem input = ((global::BlazorServer.Models.TodoItem)original);
+            global::BlazorServer.Models.TodoItem result = (global::BlazorServer.Models.TodoItem)global::System.Runtime.Serialization.FormatterServices.GetUninitializedObject(typeof(global::BlazorServer.Models.TodoItem));
+            context.RecordCopy(original, result);
+            setField2(result, input.IsDone);
+            setField0(result, input.Key);
+            setField3(result, input.OwnerKey);
+            setField4(result, input.Timestamp);
+            setField1(result, input.Title);
+            return result;
         }
 
         [global::Orleans.CodeGeneration.SerializerMethodAttribute]

@@ -26,7 +26,6 @@ C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\bin\Debug\net6.0\OrleansProvider
 C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\bin\Debug\net6.0\Orleans.Runtime.dll
 C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\bin\Debug\net6.0\Orleans.Runtime.Abstractions.dll
 C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net6.0\BlazorServer.csproj.AssemblyReference.cache
 C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net6.0\BlazorServer.orleans.g.args.txt
 C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net6.0\BlazorServer.orleans.g.cs
 C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net6.0\BlazorServer.GeneratedMSBuildEditorConfig.editorconfig
@@ -44,3 +43,4 @@ C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net6.0\BlazorServer.dl
 C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net6.0\ref\BlazorServer.dll
 C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net6.0\BlazorServer.pdb
 C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net6.0\BlazorServer.genruntimeconfig.cache
+C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net6.0\BlazorServer.csproj.AssemblyReference.cache
