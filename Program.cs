@@ -9,12 +9,12 @@ await Host.CreateDefaultBuilder(args)
     {
         builder.AddRedisGrainStorage("Redis", optionsBuilder => optionsBuilder.Configure(options =>
         {
-            options.ConnectionString = "localhost:6379"; // This is the default
+            options.ConnectionString = "localhost:6379"; // This is the default used by Redis docker image
             options.UseJson = true;
             options.DatabaseNumber = 1;
         }));
         builder.ConfigureApplicationParts(parts => parts.AddFromApplicationBaseDirectory());
-        builder.UseDashboard(options => { options.CounterUpdateIntervalMs = 10000; });
+        builder.UseDashboard(options => { options.CounterUpdateIntervalMs = 10000; }); //at http://localhost:8080
         builder.UseLocalhostClustering();
         builder.AddMemoryGrainStorageAsDefault();
         builder.AddSimpleMessageStreamProvider("SMS");

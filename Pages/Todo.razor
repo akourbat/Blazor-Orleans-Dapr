@@ -39,9 +39,20 @@
         // get all items from the cluster
         foreach (var item in await TodoService.GetAllAsync(ownerKey))
         {
-            todos.Add(item);
+            // there is a chance that stream already pushed some items in, so check if same keys exist
+            if (todos.TryGetValue(item.Key, out var current))
+            {
+                // latest one wins
+                if (item.Timestamp > current.Timestamp)
+                {
+                    todos[todos.IndexOf(current)] = item;
+                }
+            }
+            else
+            {
+                todos.Add(item);
+            }
         }
-
         await base.OnInitializedAsync();
     }
 
@@ -65,23 +76,8 @@
             // create a new todo
             var todo = new TodoItem(Guid.NewGuid(), newTodo, false, ownerKey);
 
-            // add it to the cluste
+            // sedn it to be processed
             await TodoService.SetAsync(todo);
-
-            // the above this will generate a stream notification that may or may not have come through while we were awaiting the call
-            // therefore only add it to the interface if it is not there yet
-            //if (todos.TryGetValue(todo.Key, out var current))
-            //{
-            //    // latest one wins
-            //    if (todo.Timestamp > current.Timestamp)
-            //    {
-            //        todos[todos.IndexOf(current)] = todo;
-            //    }
-            //}
-            //else
-            //{
-            //    todos.Add(todo);
-            //}
 
             // reset the text box
             newTodo = null;
@@ -117,38 +113,21 @@
         return Task.CompletedTask;
     }
 
-    private void TryUpdateCollection(TodoItem item)
-    {
-        // we need to cater for reentrancy allowing a stream notification during the previous await
-        // the notification may have even have deleted the item - if so then deletion wins
-        if (todos.TryGetValue(item.Key, out var current))
-        {
-            // latest one wins
-            if (item.Timestamp > current.Timestamp)
-            {
-                todos[todos.IndexOf(current)] = item;
-            }
-        }
-    }
-
     private async Task HandleTodoDoneAsync(TodoItem item, bool isDone)
     {
         var updated = item with { IsDone = isDone, Timestamp = DateTime.UtcNow };
         await TodoService.SetAsync(updated);
-        //TryUpdateCollection(updated);
     }
 
     private async Task HandleTodoTitleChangeAsync(TodoItem item, string title)
     {
         var updated = item with { Title = title, Timestamp = DateTime.UtcNow };
         await TodoService.SetAsync(updated);
-        //TryUpdateCollection(updated);
     }
 
     private async Task HandleDeleteTodoAsync(TodoItem item)
     {
         await TodoService.DeleteAsync(item.Key);
-        //todos.Remove(item.Key);
     }
 
     private class TodoKeyedCollection : KeyedCollection<Guid, TodoItem>
