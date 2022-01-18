@@ -15,7 +15,7 @@ namespace BlazorServer
         private string GrainType => nameof(TodoGrain);
         private Guid GrainKey => this.GetPrimaryKey();
 
-        public TodoGrain(ILogger<TodoGrain> logger, [PersistentState("State")] IPersistentState<State> state)
+        public TodoGrain(ILogger<TodoGrain> logger, [PersistentState("State", "Redis")] IPersistentState<State> state)
         {
             this._logger = logger;
             this._state = state;

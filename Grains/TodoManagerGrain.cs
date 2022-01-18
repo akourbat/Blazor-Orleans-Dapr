@@ -11,7 +11,7 @@ namespace BlazorServer
     {
         private readonly IPersistentState<State> _state;
 
-        public TodoManagerGrain([PersistentState("State")] IPersistentState<State> state)
+        public TodoManagerGrain([PersistentState("State", "Redis")] IPersistentState<State> state)
         {
             this._state = state;
         }

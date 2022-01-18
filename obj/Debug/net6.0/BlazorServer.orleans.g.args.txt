@@ -163,12 +163,16 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\Microsoft.Win32.Registry.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\mscorlib.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\netstandard.dll
-Reference:C:\Users\akour\.nuget\packages\newtonsoft.json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll
+Reference:C:\Users\akour\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll
+Reference:C:\Users\akour\.nuget\packages\orleans.clustering.redis\3.2.1\lib\netstandard2.0\Orleans.Clustering.Redis.dll
 Reference:C:\Users\akour\.nuget\packages\microsoft.orleans.core.abstractions\3.4.3\lib\netstandard2.0\Orleans.Core.Abstractions.dll
 Reference:C:\Users\akour\.nuget\packages\microsoft.orleans.core\3.4.3\lib\netcoreapp3.1\Orleans.Core.dll
+Reference:C:\Users\akour\.nuget\packages\orleans.persistence.redis\3.2.1\lib\netstandard2.0\Orleans.Persistence.Redis.dll
 Reference:C:\Users\akour\.nuget\packages\microsoft.orleans.runtime.abstractions\3.4.3\lib\netstandard2.0\Orleans.Runtime.Abstractions.dll
 Reference:C:\Users\akour\.nuget\packages\microsoft.orleans.orleansruntime\3.4.3\lib\netcoreapp3.1\Orleans.Runtime.dll
 Reference:C:\Users\akour\.nuget\packages\microsoft.orleans.orleansproviders\3.4.3\lib\netstandard2.0\OrleansProviders.dll
+Reference:C:\Users\akour\.nuget\packages\pipelines.sockets.unofficial\2.1.6\lib\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
+Reference:C:\Users\akour\.nuget\packages\stackexchange.redis\2.1.30\lib\netstandard2.0\StackExchange.Redis.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\System.AppContext.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\System.Buffers.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\System.Collections.Concurrent.dll
@@ -193,6 +197,7 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\System.Diagnostics.DiagnosticSource.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.0\ref\net6.0\System.Diagnostics.EventLog.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\System.Diagnostics.FileVersionInfo.dll
+Reference:C:\Users\akour\.nuget\packages\system.diagnostics.performancecounter\4.7.0\ref\netstandard2.0\System.Diagnostics.PerformanceCounter.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\System.Diagnostics.Process.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\System.Diagnostics.StackTrace.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\System.Diagnostics.TextWriterTraceListener.dll
@@ -325,4 +330,4 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\System.Xml.XPath.XDocument.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\WindowsBase.dll
 DefineConstants:TRACE,DEBUG,NET,NET6_0,NETCOREAPP
-InputHash:21fa4ddb2063141b8faf243db37edd294fb0816a
+InputHash:d52911e8fcc1315c46bc1f7da0472f202559f4b5

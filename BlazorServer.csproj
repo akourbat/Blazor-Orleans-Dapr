@@ -13,6 +13,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Orleans.Clustering.Redis" Version="3.2.1" />
+    <PackageReference Include="Orleans.Persistence.Redis" Version="3.2.1" />
   </ItemGroup>
 
 </Project>
