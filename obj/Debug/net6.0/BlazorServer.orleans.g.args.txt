@@ -170,6 +170,8 @@ Reference:C:\Users\akour\.nuget\packages\microsoft.orleans.core\3.4.3\lib\netcor
 Reference:C:\Users\akour\.nuget\packages\orleans.persistence.redis\3.2.1\lib\netstandard2.0\Orleans.Persistence.Redis.dll
 Reference:C:\Users\akour\.nuget\packages\microsoft.orleans.runtime.abstractions\3.4.3\lib\netstandard2.0\Orleans.Runtime.Abstractions.dll
 Reference:C:\Users\akour\.nuget\packages\microsoft.orleans.orleansruntime\3.4.3\lib\netcoreapp3.1\Orleans.Runtime.dll
+Reference:C:\Users\akour\.nuget\packages\orleansdashboard.core\3.6.1\lib\netstandard2.0\OrleansDashboard.Core.dll
+Reference:C:\Users\akour\.nuget\packages\orleansdashboard\3.6.1\lib\net5.0\OrleansDashboard.dll
 Reference:C:\Users\akour\.nuget\packages\microsoft.orleans.orleansproviders\3.4.3\lib\netstandard2.0\OrleansProviders.dll
 Reference:C:\Users\akour\.nuget\packages\pipelines.sockets.unofficial\2.1.6\lib\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
 Reference:C:\Users\akour\.nuget\packages\stackexchange.redis\2.1.30\lib\netstandard2.0\StackExchange.Redis.dll
@@ -330,4 +332,4 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\System.Xml.XPath.XDocument.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\WindowsBase.dll
 DefineConstants:TRACE,DEBUG,NET,NET6_0,NETCOREAPP
-InputHash:d52911e8fcc1315c46bc1f7da0472f202559f4b5
+InputHash:877f81d387d5df3a84f46ab6cfd50de074e44f83

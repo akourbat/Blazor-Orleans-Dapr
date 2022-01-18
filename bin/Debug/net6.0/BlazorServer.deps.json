@@ -14,7 +14,8 @@
           "Microsoft.Orleans.OrleansProviders": "3.4.3",
           "Microsoft.Orleans.Server": "3.4.3",
           "Orleans.Clustering.Redis": "3.2.1",
-          "Orleans.Persistence.Redis": "3.2.1"
+          "Orleans.Persistence.Redis": "3.2.1",
+          "OrleansDashboard": "3.6.1"
         },
         "runtime": {
           "BlazorServer.dll": {}
@@ -240,6 +241,11 @@
       "Microsoft.Extensions.Primitives/3.1.3": {},
       "Microsoft.NETCore.Platforms/3.1.0": {},
       "Microsoft.NETCore.Targets/1.1.3": {},
+      "Microsoft.Orleans.Client/3.4.0": {
+        "dependencies": {
+          "Microsoft.Orleans.OrleansProviders": "3.4.3"
+        }
+      },
       "Microsoft.Orleans.CodeGenerator.MSBuild/3.4.3": {},
       "Microsoft.Orleans.Core/3.4.3": {
         "dependencies": {
@@ -255,7 +261,7 @@
           "Microsoft.Orleans.Core.Abstractions": "3.4.3",
           "Newtonsoft.Json": "12.0.3",
           "System.Buffers": "4.5.0",
-          "System.Collections.Immutable": "1.7.0",
+          "System.Collections.Immutable": "5.0.0",
           "System.Diagnostics.DiagnosticSource": "4.7.0",
           "System.IO.Pipelines": "4.7.2",
           "System.Memory": "4.5.3",
@@ -395,6 +401,31 @@
           }
         }
       },
+      "OrleansDashboard/3.6.1": {
+        "dependencies": {
+          "Microsoft.Orleans.Core": "3.4.3",
+          "Microsoft.Orleans.OrleansRuntime": "3.4.3",
+          "OrleansDashboard.Core": "3.6.1",
+          "System.Collections.Immutable": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/OrleansDashboard.dll": {
+            "assemblyVersion": "3.6.1.0",
+            "fileVersion": "3.6.1.0"
+          }
+        }
+      },
+      "OrleansDashboard.Core/3.6.1": {
+        "dependencies": {
+          "Microsoft.Orleans.Client": "3.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/OrleansDashboard.Core.dll": {
+            "assemblyVersion": "3.6.1.0",
+            "fileVersion": "3.6.1.0"
+          }
+        }
+      },
       "Pipelines.Sockets.Unofficial/2.1.6": {
         "dependencies": {
           "System.Buffers": "4.5.0",
@@ -424,7 +455,7 @@
         }
       },
       "System.Buffers/4.5.0": {},
-      "System.Collections.Immutable/1.7.0": {},
+      "System.Collections.Immutable/5.0.0": {},
       "System.Configuration.ConfigurationManager/4.7.0": {
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "4.7.0",
@@ -775,6 +806,13 @@
       "path": "microsoft.netcore.targets/1.1.3",
       "hashPath": "microsoft.netcore.targets.1.1.3.nupkg.sha512"
     },
+    "Microsoft.Orleans.Client/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TPTn35e1ynSDZhRMLdA0Pp4ey7FoxUBkA6R1+KCvmHtN4eDtAatBVDCu8ioWaTQWclYqoLo6wR6Xq2+7SaZ3pw==",
+      "path": "microsoft.orleans.client/3.4.0",
+      "hashPath": "microsoft.orleans.client.3.4.0.nupkg.sha512"
+    },
     "Microsoft.Orleans.CodeGenerator.MSBuild/3.4.3": {
       "type": "package",
       "serviceable": true,
@@ -859,6 +897,20 @@
       "path": "orleans.persistence.redis/3.2.1",
       "hashPath": "orleans.persistence.redis.3.2.1.nupkg.sha512"
     },
+    "OrleansDashboard/3.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UN48CIzBTOzjkL3YlfWHvoh4GXtlNsm78N35jYMUPPwP6BxaMhYgqrzgC/PHb++Fzjqu7KeGzQoJ47XyE2OlBw==",
+      "path": "orleansdashboard/3.6.1",
+      "hashPath": "orleansdashboard.3.6.1.nupkg.sha512"
+    },
+    "OrleansDashboard.Core/3.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7cpLnb7YsgdyE0ensOq8qGYrXn/DrT+hq4Ltdaciuu+rSKGVTwQ4nPQ6ZAbPnvzafBqGcS75gLZP2t5VRTTKHQ==",
+      "path": "orleansdashboard.core/3.6.1",
+      "hashPath": "orleansdashboard.core.3.6.1.nupkg.sha512"
+    },
     "Pipelines.Sockets.Unofficial/2.1.6": {
       "type": "package",
       "serviceable": true,
@@ -880,12 +932,12 @@
       "path": "system.buffers/4.5.0",
       "hashPath": "system.buffers.4.5.0.nupkg.sha512"
     },
-    "System.Collections.Immutable/1.7.0": {
+    "System.Collections.Immutable/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RVSM6wZUo6L2y6P3vN6gjUtyJ2IF2RVtrepF3J7nrDKfFQd5u/SnSUFclchYQis8/k5scHy9E+fVeKVQLnnkzw==",
-      "path": "system.collections.immutable/1.7.0",
-      "hashPath": "system.collections.immutable.1.7.0.nupkg.sha512"
+      "sha512": "sha512-FXkLXiK0sVVewcso0imKQoOxjoPAj42R8HtjjbSjVPAzwDfzoyoznWxgA3c38LDbN9SJux1xXoXYAhz98j7r2g==",
+      "path": "system.collections.immutable/5.0.0",
+      "hashPath": "system.collections.immutable.5.0.0.nupkg.sha512"
     },
     "System.Configuration.ConfigurationManager/4.7.0": {
       "type": "package",

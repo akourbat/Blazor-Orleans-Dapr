@@ -15,6 +15,7 @@
     </PackageReference>
     <PackageReference Include="Orleans.Clustering.Redis" Version="3.2.1" />
     <PackageReference Include="Orleans.Persistence.Redis" Version="3.2.1" />
+    <PackageReference Include="OrleansDashboard" Version="3.6.1" />
   </ItemGroup>
 
 </Project>

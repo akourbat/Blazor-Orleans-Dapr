@@ -366,6 +366,12 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Microsoft.Orleans.Client/3.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Orleans.OrleansProviders": "3.4.0"
+        }
+      },
       "Microsoft.Orleans.CodeGenerator.MSBuild/3.4.3": {
         "type": "package",
         "build": {
@@ -554,6 +560,36 @@
           "lib/netstandard2.0/Orleans.Persistence.Redis.dll": {}
         }
       },
+      "OrleansDashboard/3.6.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Orleans.Core": "3.4.0",
+          "Microsoft.Orleans.OrleansRuntime": "3.4.0",
+          "OrleansDashboard.Core": "3.6.1",
+          "System.Collections.Immutable": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/OrleansDashboard.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/OrleansDashboard.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrleansDashboard.Core/3.6.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Orleans.Client": "3.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/OrleansDashboard.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OrleansDashboard.Core.dll": {}
+        }
+      },
       "Pipelines.Sockets.Unofficial/2.1.6": {
         "type": "package",
         "dependencies": {
@@ -593,7 +629,7 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "System.Collections.Immutable/1.7.0": {
+      "System.Collections.Immutable/5.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/System.Collections.Immutable.dll": {}
@@ -1382,6 +1418,18 @@
         "runtime.json"
       ]
     },
+    "Microsoft.Orleans.Client/3.4.0": {
+      "sha512": "TPTn35e1ynSDZhRMLdA0Pp4ey7FoxUBkA6R1+KCvmHtN4eDtAatBVDCu8ioWaTQWclYqoLo6wR6Xq2+7SaZ3pw==",
+      "type": "package",
+      "path": "microsoft.orleans.client/3.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "logo_128.png",
+        "microsoft.orleans.client.3.4.0.nupkg.sha512",
+        "microsoft.orleans.client.nuspec"
+      ]
+    },
     "Microsoft.Orleans.CodeGenerator.MSBuild/3.4.3": {
       "sha512": "MbgLHLF3kXE6RYXsgk9DCGa+MGthgjDoxMz3WlB0vEyiO87tXNF1Dh7Zyqtle2V6tUc3jvHQ89TTQAO4kStxqA==",
       "type": "package",
@@ -1718,6 +1766,32 @@
         "orleans.persistence.redis.nuspec"
       ]
     },
+    "OrleansDashboard/3.6.1": {
+      "sha512": "UN48CIzBTOzjkL3YlfWHvoh4GXtlNsm78N35jYMUPPwP6BxaMhYgqrzgC/PHb++Fzjqu7KeGzQoJ47XyE2OlBw==",
+      "type": "package",
+      "path": "orleansdashboard/3.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OrleansLogo.png",
+        "lib/net5.0/OrleansDashboard.dll",
+        "orleansdashboard.3.6.1.nupkg.sha512",
+        "orleansdashboard.nuspec"
+      ]
+    },
+    "OrleansDashboard.Core/3.6.1": {
+      "sha512": "7cpLnb7YsgdyE0ensOq8qGYrXn/DrT+hq4Ltdaciuu+rSKGVTwQ4nPQ6ZAbPnvzafBqGcS75gLZP2t5VRTTKHQ==",
+      "type": "package",
+      "path": "orleansdashboard.core/3.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OrleansLogo.png",
+        "lib/netstandard2.0/OrleansDashboard.Core.dll",
+        "orleansdashboard.core.3.6.1.nupkg.sha512",
+        "orleansdashboard.core.nuspec"
+      ]
+    },
     "Pipelines.Sockets.Unofficial/2.1.6": {
       "sha512": "Yv5qRZm2V5sgfZfpoGog0BTKroPAymIWkBfAQ0hE6xAhK/uIFLJmfSMHdV4ziJglJu9VcYpbK5ENDL2x5Q6zRQ==",
       "type": "package",
@@ -1787,15 +1861,18 @@
         "version.txt"
       ]
     },
-    "System.Collections.Immutable/1.7.0": {
-      "sha512": "RVSM6wZUo6L2y6P3vN6gjUtyJ2IF2RVtrepF3J7nrDKfFQd5u/SnSUFclchYQis8/k5scHy9E+fVeKVQLnnkzw==",
+    "System.Collections.Immutable/5.0.0": {
+      "sha512": "FXkLXiK0sVVewcso0imKQoOxjoPAj42R8HtjjbSjVPAzwDfzoyoznWxgA3c38LDbN9SJux1xXoXYAhz98j7r2g==",
       "type": "package",
-      "path": "system.collections.immutable/1.7.0",
+      "path": "system.collections.immutable/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Collections.Immutable.dll",
+        "lib/net461/System.Collections.Immutable.xml",
         "lib/netstandard1.0/System.Collections.Immutable.dll",
         "lib/netstandard1.0/System.Collections.Immutable.xml",
         "lib/netstandard1.3/System.Collections.Immutable.dll",
@@ -1804,7 +1881,7 @@
         "lib/netstandard2.0/System.Collections.Immutable.xml",
         "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
         "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
-        "system.collections.immutable.1.7.0.nupkg.sha512",
+        "system.collections.immutable.5.0.0.nupkg.sha512",
         "system.collections.immutable.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -2582,7 +2659,8 @@
       "Microsoft.Orleans.OrleansProviders >= 3.4.3",
       "Microsoft.Orleans.Server >= 3.4.3",
       "Orleans.Clustering.Redis >= 3.2.1",
-      "Orleans.Persistence.Redis >= 3.2.1"
+      "Orleans.Persistence.Redis >= 3.2.1",
+      "OrleansDashboard >= 3.6.1"
     ]
   },
   "packageFolders": {
@@ -2658,6 +2736,10 @@
           "Orleans.Persistence.Redis": {
             "target": "Package",
             "version": "[3.2.1, )"
+          },
+          "OrleansDashboard": {
+            "target": "Package",
+            "version": "[3.6.1, )"
           }
         },
         "imports": [

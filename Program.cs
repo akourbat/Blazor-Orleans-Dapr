@@ -13,6 +13,8 @@ await Host.CreateDefaultBuilder(args)
             options.UseJson = true;
             options.DatabaseNumber = 1;
         }));
+        builder.ConfigureApplicationParts(parts => parts.AddFromApplicationBaseDirectory());
+        builder.UseDashboard(options => { options.CounterUpdateIntervalMs = 10000; });
         builder.UseLocalhostClustering();
         builder.AddMemoryGrainStorageAsDefault();
         builder.AddSimpleMessageStreamProvider("SMS");

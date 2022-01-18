@@ -73,6 +73,10 @@
             "Orleans.Persistence.Redis": {
               "target": "Package",
               "version": "[3.2.1, )"
+            },
+            "OrleansDashboard": {
+              "target": "Package",
+              "version": "[3.6.1, )"
             }
           },
           "imports": [
