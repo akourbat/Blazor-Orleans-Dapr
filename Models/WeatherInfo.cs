@@ -1,8 +1,10 @@
 using Newtonsoft.Json;
+using Orleans.Concurrency;
 using System;
 
 namespace BlazorServer.Models
 {
+    [Immutable]
     public record class WeatherInfo
     {
         public WeatherInfo(DateTime date, int temperatureC, string summary, int temperatureF) =>
