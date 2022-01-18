@@ -3,6 +3,7 @@ using Dapr.Actors.Runtime;
 using System.Threading.Tasks;
 using BlazorServer.Models;
 using Dapr.Actors;
+using System.Collections.Immutable;
 
 namespace BlazorServer.Grains
 {
@@ -19,6 +20,7 @@ namespace BlazorServer.Grains
             new WeatherInfo(DateTime.Today.AddDays(3), -13, "Freezing", 9),
             new WeatherInfo(DateTime.Today.AddDays(4), -16, "Balmy", 4),
             new WeatherInfo(DateTime.Today.AddDays(5), -2, "Chilly", 29) };
+        
         public WeatherActor(ActorHost host) : base(host) { }
 
         public Task<WeatherInfo[]> GetForecastAsync() => Task.FromResult(data);

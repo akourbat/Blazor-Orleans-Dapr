@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z78KubzVZdXAPRmip+keVglkmyboCnr6qhTjg9WQPFzGJmcv6LXxDmrpXUXn0BYbHDl9tRlVTshnb+Cv+0A7uw==",
+  "dgSpecHash": "EaTjBWWDw6jyQWMCnkYJQGWDXQRpb1quKvgRGtbpW1MJDyHzNUd/z2vYcEwnqv16SpChN7GMkefMLXSv+BTsCw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\BlazorServer.csproj",
+  "projectFilePath": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\BlazorServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\akour\\.nuget\\packages\\dapr.actors\\1.5.0\\dapr.actors.1.5.0.nupkg.sha512",
     "C:\\Users\\akour\\.nuget\\packages\\dapr.actors.aspnetcore\\1.5.0\\dapr.actors.aspnetcore.1.5.0.nupkg.sha512",

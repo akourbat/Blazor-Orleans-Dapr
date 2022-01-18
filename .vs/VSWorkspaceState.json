@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Models",
     "\\Pages",
     "\\Services"
   ],
-  "SelectedNode": "\\Services\\TodoService.cs",
+  "SelectedNode": "\\Models\\TodoItem.cs",
   "PreviewInSolutionExplorer": false
 }

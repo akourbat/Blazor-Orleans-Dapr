@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tLS3BIX1NwshxM69DWPWpIEYnvSUW6qYw8KqTBAg6Hw=",
+  "Hash": "DbKc7K2f+0oKLVdniketbo5Zu0gpYX0cVln5NS5R7Yw=",
   "Source": "BlazorServer",
   "BasePath": "_content/BlazorServer",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BlazorServer\\wwwroot",
       "Source": "BlazorServer",
-      "ContentRoot": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\",
       "BasePath": "_content/BlazorServer",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\",
       "BasePath": "_content/BlazorServer",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\",
       "BasePath": "_content/BlazorServer",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\",
       "BasePath": "_content/BlazorServer",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\",
       "BasePath": "_content/BlazorServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\",
       "BasePath": "_content/BlazorServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\",
       "BasePath": "_content/BlazorServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\",
       "BasePath": "_content/BlazorServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\",
       "BasePath": "_content/BlazorServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\",
       "BasePath": "_content/BlazorServer",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\",
       "BasePath": "_content/BlazorServer",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\",
       "BasePath": "_content/BlazorServer",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\css\\site.css",
       "SourceId": "BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\",
       "BasePath": "_content/BlazorServer",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\favicon.ico",
       "SourceId": "BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\wwwroot\\",
       "BasePath": "_content/BlazorServer",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",

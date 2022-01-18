@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\BlazorServer.csproj": {}
+    "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\BlazorServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\BlazorServer.csproj": {
+    "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\BlazorServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\BlazorServer.csproj",
+        "projectUniqueName": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\BlazorServer.csproj",
         "projectName": "BlazorServer",
-        "projectPath": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\BlazorServer.csproj",
+        "projectPath": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\BlazorServer.csproj",
         "packagesPath": "C:\\Users\\akour\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akour\\Source\\Repos\\Blazor-Orleans-Dapr\\obj\\",
+        "outputPath": "C:\\Users\\akour\\source\\repos\\Blazor-Orleans-Dapr\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

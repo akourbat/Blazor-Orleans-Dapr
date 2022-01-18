@@ -70,18 +70,18 @@
 
             // the above this will generate a stream notification that may or may not have come through while we were awaiting the call
             // therefore only add it to the interface if it is not there yet
-            if (todos.TryGetValue(todo.Key, out var current))
-            {
-                // latest one wins
-                if (todo.Timestamp > current.Timestamp)
-                {
-                    todos[todos.IndexOf(current)] = todo;
-                }
-            }
-            else
-            {
-                todos.Add(todo);
-            }
+            //if (todos.TryGetValue(todo.Key, out var current))
+            //{
+            //    // latest one wins
+            //    if (todo.Timestamp > current.Timestamp)
+            //    {
+            //        todos[todos.IndexOf(current)] = todo;
+            //    }
+            //}
+            //else
+            //{
+            //    todos.Add(todo);
+            //}
 
             // reset the text box
             newTodo = null;
@@ -135,20 +135,20 @@
     {
         var updated = item with { IsDone = isDone, Timestamp = DateTime.UtcNow };
         await TodoService.SetAsync(updated);
-        TryUpdateCollection(updated);
+        //TryUpdateCollection(updated);
     }
 
     private async Task HandleTodoTitleChangeAsync(TodoItem item, string title)
     {
         var updated = item with { Title = title, Timestamp = DateTime.UtcNow };
         await TodoService.SetAsync(updated);
-        TryUpdateCollection(updated);
+        //TryUpdateCollection(updated);
     }
 
     private async Task HandleDeleteTodoAsync(TodoItem item)
     {
         await TodoService.DeleteAsync(item.Key);
-        todos.Remove(item.Key);
+        //todos.Remove(item.Key);
     }
 
     private class TodoKeyedCollection : KeyedCollection<Guid, TodoItem>

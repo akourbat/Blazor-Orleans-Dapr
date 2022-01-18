@@ -1,22 +1,22 @@
 LogLevel:Warning
-ProjectPath:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\BlazorServer.csproj
+ProjectPath:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\BlazorServer.csproj
 ProjectGuid:
 AssemblyName:BlazorServer
 OutputType:Exe
-TargetPath:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\bin\Debug\net6.0\BlazorServer.dll
-CodeGenOutputFile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\obj\Debug\net6.0\BlazorServer.orleans.g.cs
-Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\ITodoGrain.cs
-Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\ITodoManagerGrain.cs
-Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\TodoGrain.cs
-Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\TodoManagerGrain.cs
-Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Grains\WeatherActor.cs
-Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Models\TodoItem.cs
-Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Models\TodoNotification.cs
-Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Models\WeatherInfo.cs
-Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Program.cs
-Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Services\TodoService.cs
-Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Services\WeatherForecastService.cs
-Compile:C:\Users\akour\Source\Repos\Blazor-Orleans-Dapr\Startup.cs
+TargetPath:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\bin\Debug\net6.0\BlazorServer.dll
+CodeGenOutputFile:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\obj\Debug\net6.0\BlazorServer.orleans.g.cs
+Compile:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\Grains\ITodoGrain.cs
+Compile:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\Grains\ITodoManagerGrain.cs
+Compile:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\Grains\TodoGrain.cs
+Compile:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\Grains\TodoManagerGrain.cs
+Compile:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\Grains\WeatherActor.cs
+Compile:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\Models\TodoItem.cs
+Compile:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\Models\TodoNotification.cs
+Compile:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\Models\WeatherInfo.cs
+Compile:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\Program.cs
+Compile:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\Services\TodoService.cs
+Compile:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\Services\WeatherForecastService.cs
+Compile:C:\Users\akour\source\repos\Blazor-Orleans-Dapr\Startup.cs
 Reference:C:\Users\akour\.nuget\packages\dapr.actors.aspnetcore\1.5.0\lib\netcoreapp3.1\Dapr.Actors.AspNetCore.dll
 Reference:C:\Users\akour\.nuget\packages\dapr.actors\1.5.0\lib\netcoreapp3.1\Dapr.Actors.dll
 Reference:C:\Users\akour\.nuget\packages\dapr.client\1.5.0\lib\netcoreapp3.1\Dapr.Client.dll
@@ -325,4 +325,4 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\System.Xml.XPath.XDocument.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\WindowsBase.dll
 DefineConstants:TRACE,DEBUG,NET,NET6_0,NETCOREAPP
-InputHash:2f213120ba9bb4c4d3f1223d71f574cff79945ad
+InputHash:21fa4ddb2063141b8faf243db37edd294fb0816a
