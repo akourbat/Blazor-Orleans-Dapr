@@ -2,7 +2,11 @@ using BlazorServer;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Orleans;
+using Orleans.Configuration;
 using Orleans.Hosting;
+using Orleans.Providers;
+using Orleans.Serialization;
+using System.Reflection;
 
 await Host.CreateDefaultBuilder(args)
     .UseOrleans(builder =>
@@ -15,9 +19,12 @@ await Host.CreateDefaultBuilder(args)
         }));
         builder.ConfigureApplicationParts(parts => parts.AddFromApplicationBaseDirectory());
         builder.UseDashboard(options => { options.CounterUpdateIntervalMs = 10000; }); //at http://localhost:8080
+        //this throws, apparently Orleans attempts to use Json for all objects if added.
+        //builder.Configure<SerializationProviderOptions>(options => options.SerializationProviders.Add(typeof(OrleansJsonSerializer).GetTypeInfo()));
         builder.UseLocalhostClustering();
         builder.AddMemoryGrainStorageAsDefault();
-        builder.AddSimpleMessageStreamProvider("SMS");
+        builder.AddMemoryStreams<DefaultMemoryMessageBodySerializer>("SMS");
+        //builder.AddSimpleMessageStreamProvider("SMS");
         builder.AddMemoryGrainStorage("PubSubStore");
     })
     .ConfigureWebHostDefaults(webBuilder =>
