@@ -1,6 +1,6 @@
 @page "/todo"
 @inject TodoService TodoService
-@implements IDisposable
+@implements IAsyncDisposable
 
 <h1>Todo (@todos.Count(todo => !todo.IsDone))</h1>
 
@@ -56,17 +56,9 @@
         await base.OnInitializedAsync();
     }
 
-    public void Dispose()
+    public async ValueTask DisposeAsync()
     {
-        // unsubscribe from the orleans stream - best effort
-        try
-        {
-            subscription?.UnsubscribeAsync();
-        }
-        catch
-        {
-            // noop
-        }
+        await subscription?.UnsubscribeAsync();
     }
 
     private async Task AddTodoAsync()
