@@ -17,6 +17,12 @@ await Host.CreateDefaultBuilder(args)
             options.UseJson = true;
             options.DatabaseNumber = 1;
         }));
+        builder.AddRedisGrainStorage("PubSubStore", optionsBuilder => optionsBuilder.Configure(options =>
+        {
+            options.ConnectionString = "localhost:6379";
+            options.UseJson = true;
+            options.DatabaseNumber = 2;
+        }));
         builder.ConfigureApplicationParts(parts => parts.AddFromApplicationBaseDirectory());
         builder.UseDashboard(options => { options.CounterUpdateIntervalMs = 10000; }); //at http://localhost:8080
         //this throws, apparently Orleans attempts to use Json for all objects if added.
@@ -24,8 +30,7 @@ await Host.CreateDefaultBuilder(args)
         builder.UseLocalhostClustering();
         builder.AddMemoryGrainStorageAsDefault();
         builder.AddMemoryStreams<DefaultMemoryMessageBodySerializer>("SMS");
-        //builder.AddSimpleMessageStreamProvider("SMS");
-        builder.AddMemoryGrainStorage("PubSubStore");
+        
     })
     .ConfigureWebHostDefaults(webBuilder =>
     {
