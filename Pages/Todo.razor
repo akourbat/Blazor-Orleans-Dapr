@@ -27,7 +27,7 @@
     private Guid ownerKey = Guid.Empty;
     private TodoKeyedCollection todos = new TodoKeyedCollection();
     private string newTodo;
-    private StreamSubscriptionHandle<TodoNotification> subscription;
+    private StreamSubscriptionHandle<object> subscription;
 
     protected override async Task OnInitializedAsync()
     {
@@ -76,32 +76,37 @@
         }
     }
 
-    private Task HandleNotificationAsync(TodoNotification notification)
+    private Task HandleNotificationAsync(object item)
     {
-        // was the item removed
-        if (notification.Item == null)
+        switch (item)
         {
-            // attempt to remove it from the user interface
-            if (todos.Remove(notification.ItemKey))
-            {
-                StateHasChanged();
-            }
-            return Task.CompletedTask;
-        }
+            case TodoNotification notification:
+                // was the item removed
+                if (notification.Item == null)
+                {
+                    // attempt to remove it from the user interface
+                    if (todos.Remove(notification.ItemKey))
+                    {
+                        StateHasChanged();
+                    }
+                    return Task.CompletedTask;
+                }
 
-        if (todos.TryGetValue(notification.Item.Key, out var current))
-        {
-            // latest one wins
-            if (notification.Item.Timestamp > current.Timestamp)
-            {
-                todos[todos.IndexOf(current)] = notification.Item;
-                StateHasChanged();
-            }
-            return Task.CompletedTask;
-        }
+                if (todos.TryGetValue(notification.Item.Key, out var current))
+                {
+                    // latest one wins
+                    if (notification.Item.Timestamp > current.Timestamp)
+                    {
+                        todos[todos.IndexOf(current)] = notification.Item;
+                        StateHasChanged();
+                    }
+                    return Task.CompletedTask;
+                }
 
-        todos.Add(notification.Item);
-        StateHasChanged();
+                todos.Add(notification.Item);
+                StateHasChanged();
+                break;
+        }
         return Task.CompletedTask;
     }
 

@@ -45,7 +45,7 @@ namespace BlazorServer
                 GrainType, GrainKey, item);
 
             // Notify listeners - best effort only
-            GetStreamProvider("SMS").GetStream<TodoNotification>(item.OwnerKey, nameof(ITodoGrain))
+            GetStreamProvider("SMS").GetStream<object>(item.OwnerKey, nameof(ITodoGrain))
                 .OnNextAsync(new TodoNotification(item.Key, item))
                 .Ignore();
         }
@@ -72,7 +72,7 @@ namespace BlazorServer
                 GrainType, GrainKey);
 
             // Notify listeners - best effort only
-            GetStreamProvider("SMS").GetStream<TodoNotification>(ownerKey, nameof(ITodoGrain))
+            GetStreamProvider("SMS").GetStream<object>(ownerKey, nameof(ITodoGrain))
                 .OnNextAsync(new TodoNotification(itemKey, null))
                 .Ignore();
 
