@@ -37,6 +37,9 @@ namespace BlazorServer
                             return null;
                         case unchecked((int)0x96C8A830):
                             return await casted.GetAsync();
+                        case (int)0x55A676C8:
+                            await casted.Notify((global::BlazorServer.Models.TodoItem)arguments[0]);
+                            return null;
                         default:
                             ThrowMethodNotImplemented(interfaceId, methodId);
                             return null;
@@ -89,6 +92,8 @@ namespace BlazorServer
                             return "ClearAsync";
                         case unchecked((int)0x96C8A830):
                             return "GetAsync";
+                        case (int)0x55A676C8:
+                            return "Notify";
                         default:
                             ThrowMethodNotImplemented(interfaceId, methodId);
                             return null;
@@ -117,6 +122,11 @@ namespace BlazorServer
         global::System.Threading.Tasks.Task<global::BlazorServer.Models.TodoItem> global::BlazorServer.ITodoGrain.GetAsync()
         {
             return base.InvokeMethodAsync<global::BlazorServer.Models.TodoItem>(unchecked((int)0x96C8A830), null);
+        }
+
+        global::System.Threading.Tasks.Task global::BlazorServer.ITodoGrain.Notify(global::BlazorServer.Models.TodoItem item0)
+        {
+            return base.InvokeMethodAsync<object>((int)0x55A676C8, new object[]{item0});
         }
     }
 
@@ -324,10 +334,11 @@ namespace OrleansGeneratedCode
             feature.AddKnownType("BlazorServer.TodoManagerGrain+State,BlazorServer", "BlazorServer.BlazorServer.TodoManagerGrain.State");
             feature.AddKnownType("BlazorServer.Grains.IWeatherActor,BlazorServer", "BlazorServer.Grains.IWeatherActor");
             feature.AddKnownType("BlazorServer.Grains.WeatherActor,BlazorServer", "BlazorServer.Grains.WeatherActor");
+            feature.AddKnownType("BlazorServer.Models.TodoEvent,BlazorServer", "BlazorServer.Models.TodoEvent");
             feature.AddKnownType("BlazorServer.Models.TodoNotification,BlazorServer", "BlazorServer.Models.TodoNotification");
             feature.AddKnownType("BlazorServer.Models.WeatherInfo,BlazorServer", "BlazorServer.Models.WeatherInfo");
             feature.AddKnownType("BlazorServer.Services.TodoService,BlazorServer", "BlazorServer.Services.TodoService");
-            feature.AddKnownType("BlazorServer.Services.TodoService+TodoItemObserver,BlazorServer", "BlazorServer.Services.TodoItemObserver");
+            feature.AddKnownType("BlazorServer.Services.TodoService+TodoEventObserver,BlazorServer", "BlazorServer.Services.TodoEventObserver");
             feature.AddKnownType("BlazorServer.Services.WeatherForecastService,BlazorServer", "BlazorServer.Services.WeatherForecastService");
             feature.AddKnownType("BlazorServer.Startup,BlazorServer", "BlazorServer.Startup");
             feature.AddKnownType("Dapr.Actors.Runtime.DependencyInjectionActorActivator,Dapr.Actors.AspNetCore", "Dapr.Actors.Runtime.DependencyInjectionActorActivator");

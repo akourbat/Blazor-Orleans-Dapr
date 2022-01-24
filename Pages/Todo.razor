@@ -27,7 +27,7 @@
     private Guid ownerKey = Guid.Empty;
     private TodoKeyedCollection todos = new TodoKeyedCollection();
     private string newTodo;
-    private StreamSubscriptionHandle<object> subscription;
+    private StreamSubscriptionHandle<TodoEvent> subscription;
 
     protected override async Task OnInitializedAsync()
     {
@@ -76,7 +76,7 @@
         }
     }
 
-    private Task HandleNotificationAsync(object item)
+    private Task HandleNotificationAsync(TodoEvent item)
     {
         switch (item)
         {

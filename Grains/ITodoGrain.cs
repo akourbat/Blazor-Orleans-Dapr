@@ -11,5 +11,7 @@ namespace BlazorServer
         Task ClearAsync();
 
         Task<TodoItem> GetAsync();
+
+        Task Notify(TodoItem item);
     }
 }

@@ -44,10 +44,19 @@ namespace BlazorServer
                 "{@GrainType} {@GrainKey} now contains {@Todo}",
                 GrainType, GrainKey, item);
 
+            this.AsReference<ITodoGrain>().Notify(item).Ignore();
             // Notify listeners - best effort only
-            GetStreamProvider("SMS").GetStream<object>(item.OwnerKey, nameof(ITodoGrain))
-                .OnNextAsync(new TodoNotification(item.Key, item))
-                .Ignore();
+            //GetStreamProvider("SMS").GetStream<object>(item.OwnerKey, nameof(ITodoGrain))
+            //    .OnNextAsync(new TodoNotification(item.Key, item))
+            //    .Ignore();
+        }
+
+        public Task Notify(TodoItem item)
+        {
+            GetStreamProvider("SMS").GetStream<TodoEvent>(item.OwnerKey, nameof(ITodoGrain))
+                .OnNextAsync(new TodoNotification(item.Key, item));
+                //.Ignore();
+            return Task.CompletedTask;
         }
 
         public async Task ClearAsync()
@@ -72,7 +81,7 @@ namespace BlazorServer
                 GrainType, GrainKey);
 
             // Notify listeners - best effort only
-            GetStreamProvider("SMS").GetStream<object>(ownerKey, nameof(ITodoGrain))
+            GetStreamProvider("SMS").GetStream<TodoEvent>(ownerKey, nameof(ITodoGrain))
                 .OnNextAsync(new TodoNotification(itemKey, null))
                 .Ignore();
 

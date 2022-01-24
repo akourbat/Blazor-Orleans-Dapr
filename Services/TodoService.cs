@@ -65,17 +65,17 @@ namespace BlazorServer.Services
         public Task DeleteAsync(Guid itemKey) =>
             client.GetGrain<ITodoGrain>(itemKey).ClearAsync();
 
-        public Task<StreamSubscriptionHandle<object>> SubscribeAsync(Guid ownerKey, Func<object, Task> action) =>
+        public Task<StreamSubscriptionHandle<TodoEvent>> SubscribeAsync(Guid ownerKey, Func<TodoEvent, Task> action) =>
             client.GetStreamProvider("SMS")
-                .GetStream<object>(ownerKey, nameof(ITodoGrain))
-                .SubscribeAsync(new TodoItemObserver(logger, action));
+                .GetStream<TodoEvent>(ownerKey, nameof(ITodoGrain))
+                .SubscribeAsync(new TodoEventObserver(logger, action));
 
-        private class TodoItemObserver : IAsyncObserver<object>
+        private class TodoEventObserver : IAsyncObserver<TodoEvent>
         {
             private readonly ILogger<TodoService> logger;
-            private readonly Func<object, Task> action;
+            private readonly Func<TodoEvent, Task> action;
 
-            public TodoItemObserver(ILogger<TodoService> logger, Func<object, Task> action)
+            public TodoEventObserver(ILogger<TodoService> logger, Func<TodoEvent, Task> action)
             {
                 this.logger = logger;
                 this.action = action;
@@ -89,7 +89,7 @@ namespace BlazorServer.Services
                 return Task.CompletedTask;
             }
 
-            public Task OnNextAsync(object item, StreamSequenceToken token = null) => action(item);
+            public Task OnNextAsync(TodoEvent item, StreamSequenceToken token = null) => action(item);
         }
     }
 }
